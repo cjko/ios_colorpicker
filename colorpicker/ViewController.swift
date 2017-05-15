@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     var failureSound = AVAudioPlayer()
     var startScreen = true
     var myMutableString = NSMutableAttributedString()
+    var muteActive = false
     
     
 
@@ -54,6 +55,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var roundScoreLabel: UILabel!
     
     // IB Actions
+    @IBAction func mute(_ sender: UIButton) {
+        if !muteActive {
+        audioPlayer.volume = 0
+        successSound.volume = 0
+        failureSound.volume = 0
+        muteActive = true
+        sender.setTitle("Unmute Sound", for: .normal)
+        }
+        else {
+            audioPlayer.volume = 0.5
+            successSound.volume = 1
+            failureSound.volume = 1
+            muteActive = false
+            sender.setTitle("Mute Sound", for: .normal)
+        }
+    }
     @IBAction func startButtonPressed(_ sender: UIButton) {
         startButton.isHidden = true
         detectShake = true
@@ -90,8 +107,8 @@ class ViewController: UIViewController {
     
         if colorView.timer > 0 {
             // DECREMENT TIMER
-            colorView.timer -= 0.005
-            timerLabel.text = String(Int(colorView.timer))
+            colorView.timer -= 0.00818
+            timerLabel.text = String(Double(Int(colorView.timer*10))/10)
             roundScore = Int(1000 * (colorView.timer/colorView.maxArcLength))
             roundScoreLabel.text = "\(roundScore)"
         } else {
@@ -117,6 +134,7 @@ class ViewController: UIViewController {
             audioPlayer.stop()
             startScreen = true
             timerLabel.text = " "
+            AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
         }
     }
 
@@ -133,14 +151,13 @@ class ViewController: UIViewController {
         roundLabel.text = "Round: 1"
         roundScoreLabel.isHidden = true
         shakeLabel.isHidden = true
-        startButton.layer.cornerRadius = 5
+        startButton.layer.cornerRadius = 20
         randColor = colorArr[Int(arc4random_uniform(UInt32(colorArr.count)))]
         contrast = contrastTupe(tupe: randColor)
         startButton.backgroundColor = changeColor(tupe: contrast)
         view.backgroundColor = changeColor(tupe: randColor)
         colorView.backgroundColor = changeColor(tupe: randColor)
         colorView.timerColor = changeColor(tupe: contrast)
-//        gameTitle.textColor = changeColor(tupe: contrast)
         scoreLabel.isHidden = true
         roundLabel.isHidden = true
         gameLabel.isHidden = true
