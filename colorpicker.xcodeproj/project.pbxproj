@@ -40,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		59CBF8C41EC66B3900E82B8B /* colorpicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = colorpicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59CBF8C41EC66B3900E82B8B /* Color Frenzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color Frenzy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CBF8C71EC66B3900E82B8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59CBF8C91EC66B3900E82B8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59CBF8CC1EC66B3900E82B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		59CBF8C51EC66B3900E82B8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59CBF8C41EC66B3900E82B8B /* colorpicker.app */,
+				59CBF8C41EC66B3900E82B8B /* Color Frenzy.app */,
 				59CBF8D81EC66B3900E82B8B /* colorpickerTests.xctest */,
 				59CBF8E31EC66B3900E82B8B /* colorpickerUITests.xctest */,
 			);
@@ -168,7 +168,7 @@
 			);
 			name = colorpicker;
 			productName = colorpicker;
-			productReference = 59CBF8C41EC66B3900E82B8B /* colorpicker.app */;
+			productReference = 59CBF8C41EC66B3900E82B8B /* Color Frenzy.app */;
 			productType = "com.apple.product-type.application";
 		};
 		59CBF8D71EC66B3900E82B8B /* colorpickerTests */ = {
@@ -447,12 +447,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Y7MP544XC9;
 				INFOPLIST_FILE = colorpicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kylebible;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Color Frenzy";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
@@ -462,12 +463,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Y7MP544XC9;
 				INFOPLIST_FILE = colorpicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kylebible;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Color Frenzy";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};

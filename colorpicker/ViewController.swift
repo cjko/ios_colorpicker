@@ -53,8 +53,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var shakeLabel: UILabel!
     @IBOutlet weak var instructionsLabel: UILabel!
     @IBOutlet weak var roundScoreLabel: UILabel!
+    @IBOutlet weak var muteButton: UIButton!
     
-    // IB Actions
+     // IB Actions
     @IBAction func mute(_ sender: UIButton) {
         if !muteActive {
         audioPlayer.volume = 0
@@ -121,9 +122,6 @@ class ViewController: UIViewController {
             startButton.isHidden = false
             detectShake = false
             roundScoreLabel.isHidden = true
-//            let alert = UIAlertController(title: "You lose!", message: "You ran out of time.", preferredStyle: UIAlertControllerStyle.alert);
-//            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil));
-//            self.present(alert, animated: true, completion: nil);
             startButton.setTitle("Start Over?", for: .normal)
             gameLabel.isHidden = false
             gameLabel.textColor = timerLabel.textColor
@@ -162,6 +160,7 @@ class ViewController: UIViewController {
         roundLabel.isHidden = true
         gameLabel.isHidden = true
         overLabel.isHidden = true
+        muteButton.isHidden = true
         gameTitle.attributedText = differentColorLetters(str: gameTitle.text, colorTupe: randColor)
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource:"musicloop", ofType:"wav")!))
@@ -216,8 +215,8 @@ class ViewController: UIViewController {
                         let ycolors = round((mydata.gravity.y + 1)*5)
                         
                         // IF COLOR IS MATCHED:
-                        if  abs(Int(xcolors)-self.randColor.0) < 1 && abs(Int(zcolors)-self.randColor.1) < 1 &&
-                            abs(Int(ycolors)-self.randColor.2) < 1 {
+                        if  abs(Int(xcolors)-self.randColor.0) < 2 && abs(Int(zcolors)-self.randColor.1) < 2 &&
+                            abs(Int(ycolors)-self.randColor.2) < 2 {
                             //      --STOP THE TIMER--
                             self.timer.invalidate()
                             //      --INCREMENT ROUND--

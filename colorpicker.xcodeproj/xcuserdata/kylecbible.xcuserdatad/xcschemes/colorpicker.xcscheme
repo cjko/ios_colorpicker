@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "59CBF8C31EC66B3900E82B8B"
-               BuildableName = "colorpicker.app"
+               BuildableName = "Color Frenzy.app"
                BlueprintName = "colorpicker"
                ReferencedContainer = "container:colorpicker.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "59CBF8C31EC66B3900E82B8B"
-            BuildableName = "colorpicker.app"
+            BuildableName = "Color Frenzy.app"
             BlueprintName = "colorpicker"
             ReferencedContainer = "container:colorpicker.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "59CBF8C31EC66B3900E82B8B"
-            BuildableName = "colorpicker.app"
+            BuildableName = "Color Frenzy.app"
             BlueprintName = "colorpicker"
             ReferencedContainer = "container:colorpicker.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "59CBF8C31EC66B3900E82B8B"
-            BuildableName = "colorpicker.app"
+            BuildableName = "Color Frenzy.app"
             BlueprintName = "colorpicker"
             ReferencedContainer = "container:colorpicker.xcodeproj">
          </BuildableReference>

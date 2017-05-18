@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+    <device id="ipad12_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,17 +13,17 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="colorpicker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Color_Frenzy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtX-HJ-Bkx" customClass="ColorView" customModule="colorpicker" customModuleProvider="target">
-                                <rect key="frame" x="218.5" y="72.5" width="230" height="230"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtX-HJ-Bkx" customClass="ColorView" customModule="Color_Frenzy" customModuleProvider="target">
+                                <rect key="frame" x="568" y="397" width="230" height="230"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLY-M8-OM8">
                                         <rect key="frame" x="52" y="187" width="126" height="42"/>
@@ -50,7 +50,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88.8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jND-l9-0oI">
-                                <rect key="frame" x="297.5" y="165.5" width="73.5" height="44.5"/>
+                                <rect key="frame" x="646.5" y="490" width="73.5" height="44.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -68,7 +68,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round: 99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yg7-9c-edg">
-                                <rect key="frame" x="513" y="28" width="134" height="21"/>
+                                <rect key="frame" x="1212" y="28" width="134" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="LaJ-V7-WTn"/>
                                     <constraint firstAttribute="width" constant="134" id="Zty-Pm-b2g"/>
@@ -80,7 +80,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tilt your phone to match the color in the center within the time limit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlL-xe-dar">
-                                <rect key="frame" x="122" y="287" width="424" height="76"/>
+                                <rect key="frame" x="471" y="611.5" width="424" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="424" id="hbU-el-UxS"/>
                                     <constraint firstAttribute="height" constant="76" id="ppw-3I-IW7"/>
@@ -92,7 +92,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNm-5f-iYY">
-                                <rect key="frame" x="286" y="290.5" width="96.5" height="52"/>
+                                <rect key="frame" x="635" y="615" width="96.5" height="52"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -106,25 +106,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR FRENZY!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1O-eT-zmO">
-                                <rect key="frame" x="136" y="0.0" width="395" height="65"/>
+                                <rect key="frame" x="485.5" y="0.0" width="395" height="65"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OVER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSN-0i-IVM">
-                                <rect key="frame" x="468.5" y="154.5" width="135.5" height="65"/>
+                                <rect key="frame" x="818" y="479.5" width="135.5" height="65"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tA0-yY-LxV">
-                                <rect key="frame" x="44.5" y="155.5" width="154" height="65"/>
+                                <rect key="frame" x="394" y="479.5" width="154" height="65"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giL-fV-VNJ">
-                                <rect key="frame" x="6" y="330" width="129" height="43"/>
+                                <rect key="frame" x="6" y="979" width="129" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="129" id="3YH-kb-71R"/>
                                     <constraint firstAttribute="height" constant="43" id="I2x-lS-JCZ"/>
@@ -170,6 +170,7 @@
                         <outlet property="gameLabel" destination="tA0-yY-LxV" id="puH-Li-cJJ"/>
                         <outlet property="gameTitle" destination="x1O-eT-zmO" id="kP3-aH-hw0"/>
                         <outlet property="instructionsLabel" destination="NlL-xe-dar" id="SGk-xk-MgI"/>
+                        <outlet property="muteButton" destination="giL-fV-VNJ" id="KMf-sH-FeP"/>
                         <outlet property="overLabel" destination="iSN-0i-IVM" id="NnP-tU-HHJ"/>
                         <outlet property="roundLabel" destination="Yg7-9c-edg" id="sZX-vb-4dx"/>
                         <outlet property="roundScoreLabel" destination="UNm-5f-iYY" id="ZhI-2k-g6T"/>
